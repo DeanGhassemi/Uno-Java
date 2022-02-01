@@ -13,12 +13,22 @@ package ca.sheridancollege.project;
  */
 public abstract class Card {
     //default modifier for child classes
-
+    private String colour;
     /**
      * Students should implement this method for their specific children classes
      *
      * @return a String representation of a card. Could be an UNO card, a regular playing card etc.
      */
+
+    public Card(String colour) {
+        this.colour = colour;
+    }
+    public String getColour(){
+        return this.colour;
+    }
+    public void setColour(String colour){
+        this.colour = colour;
+    }
     @Override
     public abstract String toString();
 
