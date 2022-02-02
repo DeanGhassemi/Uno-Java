@@ -12,18 +12,7 @@ public class ActionCard extends Card{
     public void use(){
 
     }
-    /**
-     * @return card's colour
-     */
-    public String getColour(){
-        return super.getColour();
-    }
-    /**
-     * set card's colour
-     */
-    public void setColour(String colour){
-        super.setColour(colour);
-    }
+
     @Override
     public String toString() {
         // TODO Auto-generated method stub
