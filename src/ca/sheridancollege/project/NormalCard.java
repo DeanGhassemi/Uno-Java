@@ -1,8 +1,8 @@
 package ca.sheridancollege.project;
 
-public class ActionCard extends Card{
+public class NormalCard extends Card{
     private int number;
-    public ActionCard(String colour, int number) {
+    public NormalCard(String colour, int number) {
         super(colour);
         this.number = number;
     }
