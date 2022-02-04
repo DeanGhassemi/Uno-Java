@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * @author dancye
  * @author Paul Bonenfant Jan 2020
  */
-public abstract class Player {
+public class Player {
 
     private String name; //the unique name for this player
     private ArrayList<Card> hand;
@@ -44,9 +44,29 @@ public abstract class Player {
     }
 
     /**
+     * Print their hand with numbers along each card so the player can choose.
+     * Some thing like so
+     * 1) 1Blue
+     * 2) 4Red
+     * 
+     * Depends on how we display each card
+     */
+    public void showHand(){
+
+    }
+    /**
+     * Add card to player's hand
+     */
+    public void addCard(){
+
+    }
+    
+    /**
      * The method to be overridden when you subclass the Player class with your specific type of Player and filled in
      * with logic to play your game.
      */
-    public abstract void play();
+    public void play(){
+
+    }
 
 }
