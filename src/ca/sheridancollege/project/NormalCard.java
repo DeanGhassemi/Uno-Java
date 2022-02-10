@@ -9,7 +9,7 @@ public class NormalCard extends Card{
     /**
      * Drawing the card chosen
      */
-    public void use(){
+    public void useCard(){
 
     }
 
