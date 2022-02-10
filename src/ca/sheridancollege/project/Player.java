@@ -57,8 +57,8 @@ public class Player {
     /**
      * Add card to player's hand
      */
-    public void addCard(){
-
+    public void addCard(Deck deckOfCards){
+        hand.add(deckOfCards.drawCard());
     }
     
     /**
