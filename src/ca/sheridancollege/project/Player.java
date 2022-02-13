@@ -52,7 +52,10 @@ public class Player {
      * Depends on how we display each card
      */
     public void showHand(){
-
+        System.out.println("Your Hand: ");
+        for(int i = 0; i < hand.size(); i++){
+            System.out.println("" + (i + 1) + ") " + hand.get(i));
+        }
     }
     /**
      * Add card to player's hand
