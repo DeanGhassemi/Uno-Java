@@ -47,13 +47,6 @@ public class Game {
     }
 
     /**
-     * Play the game. This might be one method or many method calls depending on your game.
-     */
-    public void play(){
-
-    }
-
-    /**
      * When the game is over, use this method to declare and display a winning player.
      */
     public void declareWinner(){
