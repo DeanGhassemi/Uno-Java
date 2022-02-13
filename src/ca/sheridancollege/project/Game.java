@@ -18,7 +18,7 @@ public class Game {
 
     private final String name;//the title of the game
     private ArrayList<Player> players;// the players of the game
-    private String colour; //Current colour that needs to be matched
+    private Card playedCard; //Current colour that needs to be matched
 
     public Game(String name) {
         this.name = name;
