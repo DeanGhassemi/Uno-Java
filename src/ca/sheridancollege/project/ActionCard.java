@@ -1,31 +1,26 @@
 package ca.sheridancollege.project;
 
 // @author Justin Joseph
-public class ActionCard {
+public class ActionCard extends Card{
     
-    //skipcard
-    public void skipCard(){
-
-    }
-
-    //reverse card
-    public void reverseCard(){
-
-    }
-
-    //2+ random color card
-    public void drawTwoPlusCard(){
-
-    }
-
-    //wild card
-    public void wildCard(){
-
+    private int number;
+    public ActionCard(String colour , int number) {
+        super(colour);
+        this.number = number;
+        //TODO Auto-generated constructor stub
     }
 
 
-    //4+ wild card
-    public void drawFourWildCard(){
+
+    public void useCard(){
 
     }
+
+    @Override
+    public String toString() {
+        return null;
+    }
+
 }
+
+    
