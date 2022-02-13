@@ -19,7 +19,9 @@ public class Deck {
 
     //The group of cards, stored in an ArrayList
     private ArrayList<Card> cards;
-    private int size;//the size of the grouping
+    private int size;//the size of the deck
+
+    public Deck(){} // For discard pile
 
     public Deck(int size) {
         this.size = size;
@@ -66,6 +68,7 @@ public class Deck {
         // filler to avoid annoying errors
         Card givenCard = this.cards.get(0);
         this.cards.remove(0);
+        this.size -= 1;
         return givenCard;
     }
 
