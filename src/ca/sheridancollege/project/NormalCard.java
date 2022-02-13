@@ -6,17 +6,21 @@ public class NormalCard extends Card{
         super(colour);
         this.number = number;
     }
-    /**
-     * Drawing the card chosen
-     */
-    public void useCard(){
 
+    public int getNumber() {
+        return this.number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return null;
+        return "{" +
+            " number='" + getNumber() + "'" +
+            "}";
     }
+
     
 }
