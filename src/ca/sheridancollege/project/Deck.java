@@ -64,7 +64,9 @@ public class Deck {
      */
     public Card drawCard(){
         // filler to avoid annoying errors
-        return null;
+        Card givenCard = this.cards.get(0);
+        this.cards.remove(0);
+        return givenCard;
     }
 
 }//end class
