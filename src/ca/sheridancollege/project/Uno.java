@@ -6,5 +6,11 @@ public class Uno {
         // Once a card is played, it will go into this deck
         Deck discardPile = new Deck(); // might be moved into Game Class.
 
+
+
+        // Need beginning of main class completed to remove the error.
+        UNO.setPlayedCard(playedCard);
+        discardPile.addCard(card);
+
     }
 }

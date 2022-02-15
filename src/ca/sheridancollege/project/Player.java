@@ -81,10 +81,11 @@ public class Player {
         int indexOfCard = input.nextInt();
         Card playingCard = hand.get(indexOfCard);
         if(playingCard instanceof WildCard){
-            // Waiting for Ahmeds WildCard Class creation
+            System.out.println("What colour do you choose?");
+            String colour = input.next().toLowerCase();
+            playingCard.setColour(colour);
+            hand.remove(indexOfCard);
         }
-
-
+        return playingCard;
     }
-
 }

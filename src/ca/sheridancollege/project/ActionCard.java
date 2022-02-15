@@ -3,22 +3,28 @@ package ca.sheridancollege.project;
 // @author Justin Joseph
 public class ActionCard extends Card{
     
-    private int number;
-    public ActionCard(String colour , int number) {
+    private String type;
+
+    public ActionCard(String colour, String type) {
         super(colour);
-        this.number = number;
-        //TODO Auto-generated constructor stub
+        this.type = type;
     }
 
-
-
-    public void useCard(){
-
+    @Override
+    public String getType() {
+        return this.type;
+    }
+    
+    @Override
+    public void setType(String type) {
+        this.type = type;
     }
 
     @Override
     public String toString() {
-        return null;
+        return "{" +
+            " type='" + getType() + "'" +
+            "}";
     }
 
 }
