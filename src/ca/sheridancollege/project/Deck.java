@@ -26,6 +26,7 @@ public class Deck {
     public Deck(int size) {
         this.size = size;
     }
+
     /**
      * A method that will create the deck as an ArrayList
      */
@@ -41,6 +42,9 @@ public class Deck {
         return cards;
     }
 
+    /** 
+     * Shuffle the deck of cards
+     */
     public void shuffle() {
         Collections.shuffle(cards);
     }
@@ -70,6 +74,9 @@ public class Deck {
         this.cards.remove(0);
         this.size -= 1;
         return givenCard;
+    }
+    public void addCard(Card card){
+        cards.add(card);
     }
 
 }//end class

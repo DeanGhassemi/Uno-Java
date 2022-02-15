@@ -32,6 +32,14 @@ public class Game {
         return name;
     }
 
+    public Card getPlayedCard() {
+        return this.playedCard;
+    }
+
+    public void setPlayedCard(Card playedCard) {
+        this.playedCard = playedCard;
+    }
+
     /**
      * @return the players of this game
      */

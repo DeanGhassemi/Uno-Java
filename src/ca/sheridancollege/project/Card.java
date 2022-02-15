@@ -29,7 +29,35 @@ public abstract class Card {
     public void setColour(String colour){
         this.colour = colour;
     }
+
     @Override
     public abstract String toString();
+
+    /** The setters and getters under this multiline comment are meant to be
+     * overwritten. We do not know what type of Card the player is giving. So,
+     * the card will need to be check which type it is then have access to 
+     * these methods. For now this will be the way we do it unless there is a
+     * better idea. they will return default values
+     */
+    public boolean getWildFour(){
+        return false;
+    }
+    public void setWildFour(boolean WildFour){
+        // Not implemented
+    }
+    public int getNumber(){
+        return 0; // default
+    }
+    
+    public void setNumber(int number){
+        // Not implemented
+    }
+    public String getType() {
+        return null;
+    }
+
+    public void setType(String type) {
+        // Not implemented
+    }
 
 }

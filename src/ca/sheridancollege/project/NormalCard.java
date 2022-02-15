@@ -6,11 +6,11 @@ public class NormalCard extends Card{
         super(colour);
         this.number = number;
     }
-
+    @Override
     public int getNumber() {
         return this.number;
     }
-
+    @Override
     public void setNumber(int number) {
         this.number = number;
     }
