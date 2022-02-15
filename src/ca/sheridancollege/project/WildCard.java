@@ -6,16 +6,14 @@ public class WildCard extends Card {
         //TODO Auto-generated constructor stub
     }
 
-    private boolean WildFour;
-    public void useCard(){
-
-    }   
+    private boolean WildFour;  
     
-    public boolean voidWildFour(){
-        return true;
+    public boolean getWildFour(){
+        return WildFour;
     }
 
     public void setWildFour(boolean WildFour){
+        this.WildFour = WildFour;
 
     }
 
