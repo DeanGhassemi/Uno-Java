@@ -5,7 +5,7 @@
  */
 package ca.sheridancollege.project;
 
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  * A class that models each Player in the game. Players have an identifier, which should be unique.
@@ -64,11 +64,26 @@ public class Player {
         hand.add(deckOfCards.drawCard());
     }
     
-    /**
-     * The method to be overridden when you subclass the Player class with your specific type of Player and filled in
-     * with logic to play your game.
+    /** Player chooses a card to play (Might not need "useCard()" in any of the
+     * card classes. Just a note for later).
+     * 
+     * @return Card playing played
      */
-    public void play(){
+    public Card play(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Which card would you like to play?");
+        /**
+         * Need to add something to check for invalid inputs such as
+         *     - Out of range index
+         *     - String inputs
+         *     - etc
+         */
+        int indexOfCard = input.nextInt();
+        Card playingCard = hand.get(indexOfCard);
+        if(playingCard instanceof WildCard){
+            // Waiting for Ahmeds WildCard Class creation
+        }
+
 
     }
 
