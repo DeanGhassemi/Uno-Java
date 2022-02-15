@@ -86,6 +86,7 @@ public class Player {
             playingCard.setColour(colour);
             hand.remove(indexOfCard);
         }
+        input.close();
         return playingCard;
     }
 }
