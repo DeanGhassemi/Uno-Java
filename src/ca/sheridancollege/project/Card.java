@@ -13,21 +13,55 @@ package ca.sheridancollege.project;
  */
 public abstract class Card {
     //default modifier for child classes
-    private String colour;
+    // private String colour;
     /**
      * Students should implement this method for their specific children classes
      *
      * @return a String representation of a card. Could be an UNO card, a regular playing card etc.
      */
 
-    public Card(String colour) {
-        this.colour = colour;
+    // public Card(String colour) {
+    //     this.colour = colour;
+    // }
+    
+    // public void setColour(String colour){
+    //     this.colour = colour;
+    // }
+
+    //new code using enums 
+    enum Color{
+        Blue, Green, Red, Yellow;
+
+        private static final Color[] colors = Color.values();
+
+        public static Color getColor(int i){
+            return Color.colors[i];
+        }
     }
-    public String getColour(){
-        return this.colour;
+
+    enum Number{
+        Zero, One, Two, Three, Four, Five, Six, Seven, Eight, Nine, DrawTwo, Skip, Reverse, WildFour, Wild;
+
+        private static final Number[] numbers = Number.values();
+
+        public static Number getNumber(int i){
+            return Number.numbers[i];
+        }
     }
-    public void setColour(String colour){
-        this.colour = colour;
+
+    private final Color colors;
+    private final Number numbers;
+
+    public Card(final Color colors, final Number numbers){
+        this.colors = colors;
+        this.numbers = numbers;
+    }
+
+    public Color getColor(){
+        return this.colors;
+    }
+    public Number getNumber(){
+        return this.numbers;
     }
 
     @Override
@@ -45,9 +79,9 @@ public abstract class Card {
     public void setWildFour(boolean WildFour){
         // Not implemented
     }
-    public int getNumber(){
-        return 0; // default
-    }
+    // public int getNumber(){
+    //     return 0; // default
+    // }
     
     public void setNumber(int number){
         // Not implemented
