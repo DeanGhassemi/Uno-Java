@@ -74,6 +74,10 @@ public class Deck {
         this.size -= 1;
         return givenCard;
     }
+    /**
+     * Add card to deck, mostly used for discard pile
+     * @param card
+     */
     public void addCard(Card card){
         cards.add(card);
     }

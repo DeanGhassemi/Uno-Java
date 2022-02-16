@@ -30,10 +30,18 @@ public class Game {
         return name;
     }
 
+    /**
+     * Getter for recently played card
+     * @return playedCard
+     */
     public Card getPlayedCard() {
         return this.playedCard;
     }
 
+    /**
+     * Setter for playedCard
+     * @param playedCard
+     */
     public void setPlayedCard(Card playedCard) {
         this.playedCard = playedCard;
     }
