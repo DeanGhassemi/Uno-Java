@@ -1,5 +1,7 @@
 package ca.sheridancollege.project;
-
+/**
+ * @author Dean Ghassemi
+ */ 
 public class Uno {
     public static void main(String[] args) {
         Game UNO = new Game("Uno");

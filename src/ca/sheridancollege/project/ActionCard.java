@@ -1,6 +1,10 @@
 package ca.sheridancollege.project;
 
-// @author Justin Joseph
+/**
+ * @author Dean Ghassemi
+ * @author Justin Joseph
+ */ 
+
 public class ActionCard extends Card{
     
     private String type;

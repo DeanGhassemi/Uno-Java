@@ -11,8 +11,7 @@ import java.util.ArrayList;
  * The class that models your game. You should create a more specific child of this class and instantiate the methods
  * given.
  *
- * @author dancye
- * @author Paul Bonenfant Jan 2020
+ * @author Dean Ghassemi
  */
 public class Game {
 
@@ -31,10 +30,18 @@ public class Game {
         return name;
     }
 
+    /**
+     * Getter for recently played card
+     * @return playedCard
+     */
     public Card getPlayedCard() {
         return this.playedCard;
     }
 
+    /**
+     * Setter for playedCard
+     * @param playedCard
+     */
     public void setPlayedCard(Card playedCard) {
         this.playedCard = playedCard;
     }

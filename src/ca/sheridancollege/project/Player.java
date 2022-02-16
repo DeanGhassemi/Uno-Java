@@ -10,9 +10,8 @@ import java.util.*;
 /**
  * A class that models each Player in the game. Players have an identifier, which should be unique.
  *
- * @author dancye
- * @author Paul Bonenfant Jan 2020
- */
+ * @author Dean Ghassemi
+ */ 
 public class Player {
 
     private String name; //the unique name for this player
@@ -43,11 +42,27 @@ public class Player {
         this.name = name;
     }
 
+    /** Getter for players hand of cards
+     * 
+     * @return player's hand of cards
+     */
+    public ArrayList<Card> getHand() {
+        return this.hand;
+    }
+    /** Setter for player's hand of cards
+     * 
+     * @param hand
+     */
+    public void setHand(ArrayList<Card> hand) {
+        this.hand = hand;
+    }
+
     /**
      * Print their hand with numbers along each card so the player can choose.
      * Some thing like so
-     * 1) 1Blue
-     * 2) 4Red
+     * 1) 1 Blue
+     * 2) 4 Red
+     * 3) Reverse Red
      * 
      * Depends on how we display each card
      */
@@ -80,6 +95,8 @@ public class Player {
          */
         int indexOfCard = input.nextInt();
         Card playingCard = hand.get(indexOfCard);
+        
+        // WildCard logic and rules
         if(playingCard instanceof WildCard){
             System.out.println("What colour do you choose?");
             String colour = input.next().toLowerCase();
