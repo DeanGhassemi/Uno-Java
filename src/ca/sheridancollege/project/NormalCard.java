@@ -1,5 +1,7 @@
 package ca.sheridancollege.project;
-
+/**
+  * @author Dean Ghassemi
+  */
 public class NormalCard extends Card{
     private int number;
     public NormalCard(String colour, int number) {

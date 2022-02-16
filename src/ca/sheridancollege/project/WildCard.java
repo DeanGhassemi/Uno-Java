@@ -1,5 +1,8 @@
 package ca.sheridancollege.project;
-
+/**
+ * @author Dean Ghassemi
+ * @author Justin Joseph
+ */ 
 public class WildCard extends Card {
 
     public WildCard(String colour) {
