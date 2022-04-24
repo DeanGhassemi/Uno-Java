@@ -20,6 +20,9 @@ public abstract class Card {
      * @return a String representation of a card. Could be an UNO card, a regular playing card etc.
      */
 
+    public Card() {
+    }
+
     public Card(String colour) {
         this.colour = colour;
     }

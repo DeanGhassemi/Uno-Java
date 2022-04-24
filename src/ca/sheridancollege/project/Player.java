@@ -15,7 +15,8 @@ import java.util.*;
 public class Player {
 
     private String name; //the unique name for this player
-    private ArrayList<Card> hand;
+    private ArrayList<Card> hand = new ArrayList<>();
+    private boolean callUNO;
 
     /**
      * A constructor that allows you to set the player's unique ID
@@ -24,6 +25,14 @@ public class Player {
      */
     public Player(String name) {
         this.name = name;
+    }
+    
+    public boolean getCallUNO() {
+        return this.callUNO;
+    }
+
+    public void setCallUNO(boolean callUNO) {
+        this.callUNO = callUNO;
     }
 
     /**

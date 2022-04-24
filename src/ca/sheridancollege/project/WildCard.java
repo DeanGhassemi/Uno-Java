@@ -5,11 +5,12 @@ package ca.sheridancollege.project;
  */ 
 public class WildCard extends Card {
 
-    public WildCard(String colour) {
-        super(colour);
+    private boolean WildFour;
+
+    public WildCard(boolean WildFour) {
+        this.WildFour = WildFour;
     }
 
-    private boolean WildFour;
 
     @Override
     public boolean getWildFour(){
@@ -24,7 +25,11 @@ public class WildCard extends Card {
 
     @Override
     public String toString() {
-        return null;
+        if(this.WildFour){
+            return "Wild Draw Four";
+        }
+        return "Wild Card";
+
     }
 
     

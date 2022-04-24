@@ -17,12 +17,10 @@ public class NormalCard extends Card{
         this.number = number;
     }
 
+
     @Override
     public String toString() {
-        return "{" +
-            " number='" + getNumber() + "'" +
-            "}";
+        return "" + getColour() + " " + getNumber();
     }
-
     
 }
