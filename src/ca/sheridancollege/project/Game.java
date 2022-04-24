@@ -18,9 +18,34 @@ public class Game {
     private final String name;//the title of the game
     private ArrayList<Player> players = new ArrayList<Player>();// the players of the game
     private Card playedCard; //Current colour that needs to be matched
+    private String colourPlayed;
+    private boolean playerTurn; //whose turn is currently is. False = player1
 
     public Game(String name) {
         this.name = name;
+    }
+    /** getter for playerTurn
+     * 
+     * @return current player turn
+     */
+    public boolean getPlayerTurn() {
+        return this.playerTurn;
+    }
+
+    /** setter for playerTurn
+     * 
+     * @param playerTurn whose turn it is gonna be
+     */
+    public void setPlayerTurn(boolean playerTurn) {
+        this.playerTurn = playerTurn;
+    }
+
+    public String getColourPlayed() {
+        return this.colourPlayed;
+    }
+
+    public void setColourPlayed(String colourPlayed) {
+        this.colourPlayed = colourPlayed;
     }
 
     /**
@@ -59,7 +84,22 @@ public class Game {
     public void setPlayers(ArrayList<Player> players) {
         this.players = players;
     }
+    
+    /** Perform the skip card act
+     * 
+     * @param cardPlayed the card the player played
+     * @param p player who played the card
+     */
+    public void skipLogic(Card cardPlayed, Player p){
+        this.playedCard = cardPlayed;
+        if(p == players.get(0)){
+            this.playerTurn = false;
+        }
+        else{
+            this.playerTurn = true;
+        }
 
+    }
     /**
      * When the game is over, use this method to declare and display a winning player.
      */
